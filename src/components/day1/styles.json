@@ -1,0 +1,12 @@
+{
+    "header1":{
+        "fontSize":"24px",
+        "fontFamily":"Arial",
+        "fontColor":"red",
+        "backgroundColor":"blue"
+    },
+    "header2":{
+        "fontsize":"18px",
+        "color":"yellow"
+    }
+}
