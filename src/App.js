@@ -7,6 +7,8 @@ import Task5 from './components/day2/task5';
 import image from './components/day2/imag.png';
 import Task6 from './components/day2/task6';
 import Task7 from './components/day2/task7';
+import Task8 from './components/day2/task8';
+
 
 function App() {
   const Task7Click = () => {
@@ -22,6 +24,9 @@ function App() {
      name="amro" email="amro@orange.com" /> <hr />
      <Task6  hLink="Home" aLink="About" ctLink="Contant"/> <hr />
      <Task7 label="Click Me" onClick={Task7Click} /> <hr />
+     <Task8 label="Click Me" onClick={Task8Click} /> <hr />
+
+    
 
     </div>
   );

@@ -11,6 +11,8 @@ const Task7Click = () => {
      name="amro" email="amro@orange.com" /> <hr />
      <Task6  hLink="Home" aLink="About" ctLink="Contant"/> <hr />
      <Task7 label="Click Me" onClick={Task7Click} /> <hr />
+    
+
 
     </div>
   );
