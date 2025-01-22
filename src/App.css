@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+import Task1 from './componts day2/task1';
+import Task2 from './componts/task2';
+import Task3 from './componts/task3';
+import Task4 from './componts/task4';
+import Task5 from './componts/task5';
+import image from './componts/imag.jpg'
+import Task6 from './componts/task6';
+import Task7 from './componts/task7';
+
+function App() {
+  const Task7Click = () => {
+    alert('Task7 button clicked!');
+  };
+  return (
+    <div className="App"><hr />
+     <Task1 name="Amro"  /><hr />
+    <Task2  label="Click Me"  /><hr />
+    <Task3  PN="labtob" price="$999" description="---" /><hr /> 
+    <Task4  username="amro" email="amro@orange.com" age="27" /><hr />
+    <Task5  avatar={<img src= {image} alt="Amro" style={{ width: '100px', height: '100px',borderRadius:"30px"}}/>}
+     name="amro" email="amro@orange.com" /> <hr />
+     <Task6  hLink="Home" aLink="About" ctLink="Contant"/> <hr />
+     <Task7 label="Click Me" onClick={Task7Click} /> <hr />
+
+    </div>
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+export default App;

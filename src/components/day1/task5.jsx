@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function MultipleStyles() {
+function Task5() {
   
   const containerStyle = {
     backgroundColor: 'lightgray', 
@@ -29,4 +29,4 @@ function MultipleStyles() {
   );
 }
 
-export default MultipleStyles;
+export default Task5;

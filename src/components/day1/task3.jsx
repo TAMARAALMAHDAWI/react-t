@@ -1,6 +1,7 @@
 import React from 'react';
+import Task5 from './task5';
 
-function DisplayName() {
+function Task3() {
   const name = "tamara";  
   return (
     <div>
@@ -9,4 +10,4 @@ function DisplayName() {
   );
 }
 
-export default DisplayName;
+export default Task3;

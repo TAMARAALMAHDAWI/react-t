@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class task8 extends Component {
+class Task8 extends Component {
   render() {
     const { isSuccess } = this.props;
     return (
@@ -11,4 +11,4 @@ class task8 extends Component {
   }
 }
 
-export default task8;
+export default Task8;

@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-function StyledComponent() {
+function Task4() {
 
   const style = {
     color: 'blue',        
@@ -18,5 +18,5 @@ function StyledComponent() {
   );
 }
 
-export default StyledComponent;
+export default Task4;
 
