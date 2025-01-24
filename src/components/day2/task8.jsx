@@ -2,7 +2,7 @@ import React,{useState} from "react";
 
  function Task8(){
  const[state, setState] = useState(0);
-const  increment=()=> setState(state+4)
+const  increment=()=> setState(state+2)
  const  descrement=()=> setState(state-4)
  return( 
      <div>

@@ -1,35 +1,109 @@
-import Task1 from './components/day2/task1';
+// // import React from 'react';
+// // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// // import Navbar from './components/home page/Navbar';
+// // import HeroSection from './components/home page/HeroSection';
+// // import AboutUs from './components/home page/AboutUs';
+// // import Services from './components/home page/Services';
+// // import Activity from './components/home page/Activity';
+// // import Teams from './components/home page/Teams';
+// // import Contact from './components/home page/Contact';
 
-import Task2 from './components/day2/task2';
-import Task3 from './components/day2/task3';
-import Task4 from './components/day2/task4';
-import Task5 from './components/day2/task5';
-import image from './components/day2/imag.png';
-import Task6 from './components/day2/task6';
-import Task7 from './components/day2/task7';
-import Task8 from './components/day2/task8';
+// // const App = () => {
+// //   return (
+// //     <Router>
+// //       <Navbar />
+// //       <Routes>
+// //         <Route path="/hero-section" component={HeroSection} />
+// //         <Route path="/about-us" component={AboutUs} />
+// //         <Route path="/services" component={Services} />
+// //         <Route path="/activity" component={Activity} />
+// //         <Route path="/teams" component={Teams} />
+// //         <Route path="/contact" component={Contact} />
+// //       </Routes>
+// //     </Router>
+// //   );
+// // }
 
+// // export default App;
+
+
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Navbar from './components/home page/Navbar';
+// import HeroSection from './components/home page/HeroSection';
+// import AboutUs from './components/home page/AboutUs';
+// import Services from './components/home page/Services';
+// import Activity from './components/home page/Activity';
+// import Teams from './components/home page/Teams';
+// import Contact from './components/home page/Contact';
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Routes>
+//         {}
+//         <Route path="/hero-section" element={<HeroSection />} />
+//         <Route path="/about-us" element={<AboutUs />} />
+//         <Route path="/services" element={<Services />} />
+//         <Route path="/activity" element={<Activity />} />
+//         <Route path="/teams" element={<Teams />} />
+//         <Route path="/contact" element={<Contact />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+import React from 'react'
+import { Link, Route, Router, Routes } from 'react-router-dom';
+
+import Home from './components/day3/home';
+import About from './components/day3/about';
+import Contact from './components/day3/contact';
+import Error from './components/day3/error';
 
 function App() {
-  const Task7Click = () => {
-    alert('Task7 button clicked!');
-  };
   return (
-    <div className="App"><hr />
-     <Task1 name="tamara"  /><hr />
-    <Task2  label="Click Me"  /><hr />
-    <Task3  PN="labtob" price="$999" description="---" /><hr /> 
-    <Task4  username="amro" email="amro@orange.com" age="27" /><hr />
-    <Task5  avatar={<img src= {image} alt="Amro" style={{ width: '100px', height: '100px',borderRadius:"30px"}}/>}
-     name="amro" email="amro@orange.com" /> <hr />
-     <Task6  hLink="Home" aLink="About" ctLink="Contant"/> <hr />
-     <Task7 label="Click Me" onClick={Task7Click} /> <hr />
-     <Task8 label="Click Me" onClick={Task8Click} /> <hr />
+  <div>
+<Router>
+<nav>
+  <ul>
+    <li>
+<Link to="/">Home</Link> 
+</li>
 
-    
+<li>
+<Link to="/b">About</Link> 
+</li> 
+ 
+ 
+<li>
+<Link to="/c">Contact</Link> 
+</li> 
 
-    </div>
+<li>
+<Link to="/d">Error</Link>
+</li>
+  </ul>
+</nav>
+
+
+
+<Routes>
+<Route path='/a' element = {<Home/>}></Route>
+<Route path = "/b" element = {<About/>}></Route>
+<Route path='/c' element = {<Contact/>}></Route>
+<Route path='/d' element = {<Error/>}></Route>
+</Routes>
+</Router>
+
+  </div>
+
   );
 }
 
-export default App;
+export default App
