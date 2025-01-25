@@ -1,9 +1,14 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png'; 
 
 const Navbar = () => {
   return (
     <nav>
+        <div className="logo">
+        <img src={logo} alt="School Logo" style={{ width: '150px', height: 'auto' }} />
+      </div>
       <ul>
         <li><Link to="/hero-section">Hero Section</Link></li>
         <li><Link to="/about-us">About Us</Link></li>
